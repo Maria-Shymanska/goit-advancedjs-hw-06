@@ -14,10 +14,10 @@ type User = {
   password: string;
 }
 
-function createOrUpdateUser(initialValues: User) {
+// Використовуємо Partial для необов'язкових полів
+function createOrUpdateUser(initialValues: Partial<User>) {
   // Оновлення користувача
 }
 
 createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
-
 export {};
